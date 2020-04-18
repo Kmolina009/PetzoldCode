@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petzold Code - A Charles Petzold Tribute</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- title -->
+      <div class="title">
+        <h1>Petzold Code</h1>
+      </div>
+      <!-- app tab(s) -->
+      <div class="container">
+        <div class="tab-container">
+          <div class="tabs" id="morseTab">Morse</div>
+          <div class="tabs" id="brailwTab">Braile</div>
+          <div class="tabs" id="binaryTab">Binary</div>
+          <div class="tabs" id="savedTab">Saved</div>
+        </div>
+        <!-- Morse code form -->
+        <div id="morseForm">
+          <div class="form" id="form">
+            <input
+              class="input-box"
+              type="text"
+              placeholder="Input Morse Code"
+            />
+            <input class="submit-btn" type="button" value="Get Code" />
+          </div>
+          <div id="m-output"></div>
+        </div>
+      </div>
+      <article></article>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
