@@ -15,9 +15,11 @@ take from morsecode.world
  //break up the function of each tab
  //have saved function be a separate script 
 
+
  //DOM elements
 
 // ***********Morse Code Form Elements*******************
+
 const containter = document.querySelector(".container");
 const form = document.querySelector("#form");
 // const wordBox = document.querySelector("#morseC");
@@ -36,7 +38,7 @@ const rsltBox = document.createElement("div");
 const resulttext = document.createElement("p");
 let finalResult = "";
 // finalResult.style.verticleAlign("middle");
-finalResult.style.color = "red";
+
 
 // This event sets default settings for site/app
 //for now, when a uer logs in have morse be the selected option
@@ -65,6 +67,8 @@ output.appendChild(rsltBox);
 //ASCII Alternative 
 const short = "•"
 const long = "–"
+
+//could break this up into objects, containing objects, per category
 const morseCode = {
 A: '•-',
 B: '-•••',
@@ -92,16 +96,40 @@ W: '•--',
 X: '-••-',
 Y: '-•--',
 Z: '--••',
-' ': '/' }
-/*
-Create a function that will take create an object and append to morseCode
-0	-----	1	.----	2	..---	3	...--	4	....-	5	.....
-6	-....	7	--...	8	---..	9	----.
-.	.-.-.-	,	--..--	?	..--..	'	.----.	!	-.-.--	/	-..-.
-(	-.--.	)	-.--.-	&	.-...	:	---...	;	-.-.-.	=	-...-
-+	.-.-.	-	-....-	_	..--.-	"	.-..-.	$	...-..-	@	.--.-.
-¿	..-.-	¡	--...-
-*/
+//have this read 
+' ': '/',
+'0': '-----',
+'1': '•----',
+'2': '••---',
+'3': '•••--',
+'4': '••••-',
+'5': '•••••',
+'6': '-••••',
+'7': '--•••',
+'8': '---••',
+'9': '----•',
+'.': '•-•-•-',
+',': '--••--',
+'?': '••--••',
+'\'': '•----•',
+'!': '-•-•--',
+'/': '-••-•',
+'(': '-•--•',
+')': '-•--•-',
+'&': '•-•••',
+':': '---•••',
+';': '-•-•-•',
+'=': '-•••-',
+'+': '•-•-•',
+'-': '-••••-',
+_: '••--•-',
+'"': '•-••-•',
+'$': '•••-••-',
+'@': '•--•-•',
+'¿': '••-•-',
+'¡': '--•••-' 
+}
+
 
 // expand so it's reusable
 const replaceCharAll = (obj) => {
@@ -119,13 +147,17 @@ const morseCoder = (e) => {
   for (let i = 0; i < chars.length; i++) {
     result.push(morseCode[chars[i]]);
   }
-  let morseResult = result.join("");
+  let morseResult = result.join(" ");
   finalResult = document.createTextNode(morseResult);
   // rsltBox.append(short);
   // rsltBox.append(long);
+  output.firstChild.style.fontSize = "x-large"
+  output.firstChild.style.color = "#FF8D24"
   rsltBox.append(finalResult);
   wordBox.textContent = "";
 };
+
+
 //Event Listners
 btn.addEventListener("click", morseCoder);
 //take apart string
