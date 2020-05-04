@@ -37,14 +37,17 @@ const output = document.querySelector("#m-output");
 const rsltBox = document.createElement("div");
 const resulttext = document.createElement("p");
 let finalResult = "";
-// finalResult.style.verticleAlign("middle");
+
 
 
 // This event sets default settings for site/app
 //for now, when a uer logs in have morse be the selected option
 window.addEventListener('load', (e) => {
   mTab.style.backgroundColor = "lightGray";
-  console.log("Hello")
+  //if a user clicks another tab, change tab color
+  // switch to selected tab content
+  //hide unselected
+  //show selected
 })
 
 // click and change the background color of a selected tab
