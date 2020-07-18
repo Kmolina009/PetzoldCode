@@ -66,15 +66,15 @@ body {
 }
 
 /* Come back to this, do the homework on what t */
-.tabs:active {
+.active, .tabs:hover {
   background-color: lightgray;
   /* is it possible to fix the overlap */
   filter: drop-shadow(5px 1px rgb(102, 102, 102));
 }
-#morseForm {
+/* #morseForm {
   display: flex;
   filter: drop-shadow(0px 10px 7px rgb(102, 102, 102));
-}
+} */
 .form {
   display: flex;
   flex-direction: column;
@@ -97,14 +97,23 @@ body {
   box-sizing: border-box;
   box-shadow: black;
 }
-#morseForm {
+/* #morseForm {
   display: flex;
   flex-direction: column;
   width: inherit;
   height: inherit;
   background-color: lightgray;
+} */
+.form-container {
+  display: none;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  background-color: lightgray;
+  filter: drop-shadow(0px 10px 7px rgb(102, 102, 102))
 }
-#m-output {
+/* TODO styling applied to all outputs */
+#morse-output {
   height: 25%;
   width: 80%;
   overflow: auto;

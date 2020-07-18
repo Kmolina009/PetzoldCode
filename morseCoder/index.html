@@ -14,21 +14,25 @@
   </head>
   <body>
     <div>
+    
       <!-- title -->
       <div class="title">
         <h1>Petzold Code</h1>
       </div>
-      <!-- app tab(s) -->
+
+      <!-- app container -->
       <div class="container">
+        
+        <!-- app tab(s) -->
         <div class="tab-container">
           <div class="tabs" id="morseTab">Morse</div>
-          <div class="tabs" id="brailwTab">Braile</div>
+          <div class="tabs" id="braileTab">Braile</div>
           <div class="tabs" id="binaryTab">Binary</div>
           <div class="tabs" id="savedTab">Saved</div>
         </div>
 
         <!-- Morse code form -->
-        <div id="morseForm">
+        <div class= "form-container" id="morseForm">
           <div class="form" id="form">
             <input
               class="input-box"
@@ -37,49 +41,44 @@
             />
             <input class="submit-btn" type="button" value="Get Code" />
           </div>
-          <div id="m-output"></div>
+          <div id="morse-output"></div>
         </div>
-
+ 
         <!-- Braile code form -->
-        <div id="morseForm">
+        <div  class= "form-container" id="braileForm">
           <div class="form" id="form">
+            <h3>Under Construction</h3>
             <input
               class="input-box"
               type="text"
-              placeholder="Input Morse Code"
+              placeholder="Input Braile Code"
             />
             <input class="submit-btn" type="button" value="Get Code" />
           </div>
-          <div id="m-output"></div>
-        </div>
+          <div id="braile-output"></div>
+      </div>
 
         <!-- Binary code form -->
-        <div id="morseForm">
+        <div class= "form-container" id="binaryForm">
           <div class="form" id="form">
+            <h3>Under Construction</h3>
             <input
               class="input-box"
               type="text"
-              placeholder="Input Morse Code"
+              placeholder="Input Binary Code"
             />
             <input class="submit-btn" type="button" value="Get Code" />
           </div>
-          <div id="m-output"></div>
+          <div id="binary-output"></div>
         </div>
-        
+
         <!--  saved entries-->
-        <div id="morseForm">
-          <div class="form" id="form">
-            <input
-              class="input-box"
-              type="text"
-              placeholder="Input Morse Code"
-            />
-            <input class="submit-btn" type="button" value="Get Code" />
-          </div>
-          <div id="m-output"></div>
+        <div class= "form-container" id="savedEntries">
+          <h3>Under Construction</h3>
         </div>
           
-      </div>
+      </div> 
+      <!-- About the author(simple paragraph) -->
       <article></article>
     </div>
     <script src="script.js"></script>
