@@ -216,3 +216,11 @@ const charReplacer = (obj, find, replace) => {
 // console.log(arrToObj(morseNumbsrAndSymbs))
 console.log(charReplacer( morseNumbsrAndSymbsObj,".",short));
 
+
+
+//Side Note 
+//Match ID's? of e.target.id
+    /*
+    String(container.children[1].id.match(/morse/gi))  === String(tabContainer.children[0].id.match(/morse/gi))
+    true
+    */

@@ -113,7 +113,7 @@ body {
   filter: drop-shadow(0px 10px 7px rgb(102, 102, 102))
 }
 /* TODO styling applied to all outputs */
-#morse-output {
+.output {
   height: 25%;
   width: 80%;
   overflow: auto;
